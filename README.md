@@ -2,19 +2,17 @@
 
 ## Descripción
 
-Este proyecto tiene como objetivo predecir la actividad solar, específicamente el número de manchas solares, utilizando redes neuronales. La predicción se basa en el análisis de datos históricos de manchas solares para ayudar a anticipar eventos solares que puedan afectar a las tecnologías modernas como las comunicaciones satelitales y las redes eléctricas.
+Este proyecto tiene como objetivo predecir el número de manchas solares utilizando redes neuronales. El modelo está diseñado para predecir la actividad solar a partir de datos históricos, un factor importante para entender fenómenos como las tormentas solares que afectan las tecnologías modernas (comunicaciones satelitales, redes eléctricas, etc.).
 
-### Enfoque
+## Enfoque
 
-El modelo está basado en redes neuronales recurrentes (RNN) para capturar las dependencias temporales en los datos de series de tiempo. Se entrenó una **Red Neuronal LSTM (Long Short-Term Memory)** con el propósito de prever el comportamiento de las manchas solares a lo largo del tiempo.
+Se utilizan **Redes Neuronales Recurrentes (RNN)**, en particular **LSTM (Long Short-Term Memory)**, para abordar el problema de la predicción de series temporales. El modelo fue entrenado utilizando datos históricos sobre el número de manchas solares y ahora se puede utilizar para hacer predicciones de futuros valores.
 
-### Objetivos
+## Objetivos
 
-1. **Predecir el número de manchas solares** para los próximos días o meses.
-2. Evaluar el rendimiento del modelo y su capacidad para realizar predicciones precisas sobre datos históricos de manchas solares.
-3. Establecer una base de comparación entre diferentes arquitecturas de redes neuronales para la predicción de series temporales.
-
----
+1. Predecir el número de manchas solares para los próximos días o meses.
+2. Evaluar el rendimiento del modelo en la predicción de series temporales.
+3. Establecer una base de comparación entre diferentes arquitecturas de redes neuronales para predicciones futuras.
 
 ## Tecnologías Utilizadas
 
@@ -23,17 +21,17 @@ El modelo está basado en redes neuronales recurrentes (RNN) para capturar las d
 - **NumPy** y **Pandas**: Para manipulación de datos.
 - **Matplotlib** y **Seaborn**: Para visualización de datos.
 
----
+## Temas Involucrados
+
+- **Astrofísica**
+- **Ciencia de Datos**
+- **Redes Neuronales**
 
 ## Estructura del Repositorio
 
 ```bash
 Prediccion_de_Manchas_Solares_usando_redes_neuronales/
-├── data/                    # Datos de entrada (archivos CSV)
-├── models/                  # Modelos entrenados y configuraciones
-├── src/                     # Código fuente
-│   ├── preprocessing.py     # Preprocesamiento de datos
-│   ├── train.py             # Código de entrenamiento del modelo
-│   ├── predict.py           # Predicciones con el modelo entrenado
-├── README.md                # Este archivo
-└── requirements.txt         # Librerías necesarias para ejecutar el proyecto
+├── Link_de_descarga_de_los_modelos.txt  # Enlace para descargar los modelos entrenados
+├── Manchas_Solares.ipynb               # Jupyter Notebook con el análisis y predicción
+├── Manchas_Solares.pdf                 # Versión PDF del notebook
+├── README.md                           # Este archivo
